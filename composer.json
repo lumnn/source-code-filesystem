@@ -9,8 +9,8 @@
         }
     ],
     "require": {
-        "php": "^7.3",
-        "webmozart/glob": "^4.1",
+        "php": "^7.3 || ^8.0",
+        "webmozart/glob": "dev-feature/support-php8",
         "webmozart/path-util": "^2.3"
     },
     "require-dev": {
@@ -44,5 +44,11 @@
             "vendor/bin/phpstan analyse",
             "vendor/bin/phpunit"
         ]
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:Th3Mouk/glob"
+        }
+    ]
 }
